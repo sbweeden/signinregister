@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SignInRegister", "SignInRegister\SignInRegister.vcxproj", "{E2F3082B-ADE0-45DD-A9D0-71D4EC7DA772}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MergeMembers", "MergeMembers\MergeMembers.vcxproj", "{DFDD34B3-321A-46F4-8A70-A1F4D2AC1459}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SIRCommon", "SIRCommon\SIRCommon.vcxproj", "{258DB4AC-F601-4EB1-A14D-DD679FF2FA99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2F3082B-ADE0-45DD-A9D0-71D4EC7DA772}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E2F3082B-ADE0-45DD-A9D0-71D4EC7DA772}.Debug|Win32.Build.0 = Debug|Win32
+		{E2F3082B-ADE0-45DD-A9D0-71D4EC7DA772}.Release|Win32.ActiveCfg = Release|Win32
+		{E2F3082B-ADE0-45DD-A9D0-71D4EC7DA772}.Release|Win32.Build.0 = Release|Win32
+		{DFDD34B3-321A-46F4-8A70-A1F4D2AC1459}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DFDD34B3-321A-46F4-8A70-A1F4D2AC1459}.Debug|Win32.Build.0 = Debug|Win32
+		{DFDD34B3-321A-46F4-8A70-A1F4D2AC1459}.Release|Win32.ActiveCfg = Release|Win32
+		{DFDD34B3-321A-46F4-8A70-A1F4D2AC1459}.Release|Win32.Build.0 = Release|Win32
+		{258DB4AC-F601-4EB1-A14D-DD679FF2FA99}.Debug|Win32.ActiveCfg = Debug|Win32
+		{258DB4AC-F601-4EB1-A14D-DD679FF2FA99}.Debug|Win32.Build.0 = Debug|Win32
+		{258DB4AC-F601-4EB1-A14D-DD679FF2FA99}.Release|Win32.ActiveCfg = Release|Win32
+		{258DB4AC-F601-4EB1-A14D-DD679FF2FA99}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

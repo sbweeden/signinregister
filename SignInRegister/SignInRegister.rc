@@ -1,0 +1,345 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About SignInRegister"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "SignInRegister Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2007 - Shane Weeden",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_SIGNINREGISTER_DIALOG DIALOGEX 0, 0, 621, 353
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "SignInRegister"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Range Officer Login",IDC_BUTTON_RANGE_OFFICER_SIGNIN,527,7,87,25
+    EDITTEXT        IDC_EDIT_FILENAME,66,39,161,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BUTTON_BROWSE,233,39,50,14
+    LISTBOX         IDC_LIST1,16,85,589,172,LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Shooter SignIn",IDC_BUTTON_TEST_SIGNIN,18,266,60,14
+    PUSHBUTTON      "Print Records",IDC_BUTTON_PRINT,95,266,60,14
+    DEFPUSHBUTTON   "Exit",IDOK,233,330,50,16
+    LTEXT           "Current Range Officer:",IDC_STATIC,7,16,75,8
+    LTEXT           "Static",IDC_TXT_RANGE_OFFICER,87,14,274,16
+    LTEXT           "Timestamp                                Name                                                    License                                     Club                                          Cat         Range Officer (* R.O. login)",IDC_STATIC,19,71,583,8
+    LTEXT           "Status:",IDC_STATIC,21,305,24,8
+    LTEXT           "Static",IDC_TXT_STATUS,57,302,229,22
+    LTEXT           "Shooter Signature",IDC_STATIC,346,272,59,8
+    LTEXT           "Register File:",IDC_STATIC,18,42,43,8
+    PUSHBUTTON      "Print Barcode",IDC_BUTTON_PRINT_BARCODE,172,266,60,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "SignInRegister.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "SignInRegister.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SIGNINREGISTER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 614
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 346
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About SignInRegister..."
+    IDS_STATUS_RO_LOGIN     "Waiting for Range Officer Login"
+    IDS_STATUS_SIGNIN       "Ready for shooter sign in"
+    IDS_ERR_MEMBERSHIP_NUMBER "The membership number must be provided"
+    IDS_ERR_NAME            "The shooter name must be provided"
+    IDS_ERR_LICENSE         "The license must be provided"
+    IDS_ERR_CATEGORY        "At least one category must be provided"
+    IDS_MB_VALIDATION       "Validation Error"
+    IDS_ERR_SIGNATURE       "The signature must be provided"
+    IDS_ERR_CLUB            "The club name (or ""visitor"") must be provided"
+    IDS_ERR_PARSE_SIG       "Error reading Signature from String value %1 at position %2"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_BTN_LOGIN           "Range Officer Login"
+    IDS_BTN_LOGOUT          "Range Officer Logout"
+    IDS_MB_LOGOUT           "Range officer: %1 is currently signed in. This will sign them out. Do you want to continue?"
+    IDS_MB_WARNING          "Warning"
+    IDS_ERR_PARSE_RECORD    "Error parsing record field ""%1"" in record string: %2"
+    IDS_ERR_ILLEGAL_CHAR    "Illegal Character '%1' in field: %2. You may not use this character in the value."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MB_ERROR            "Error"
+    IDS_ERR_PAGE_RESOLUTION "The page resolution is too small for printing (%1,%2). Try using A4 size in landscape mode."
+    IDS_REALLY_EXIT         "Do you really want to exit?"
+    IDS_INVALID_CARD        "The card you have swiped is not valid for this application."
+    IDS_SHOOTER_UNKNOWN     "The shooter with account number: %1 and name: %2 is not in the shooter database. Do you want to proceed and create this shooter?"
+    IDS_SIGNIN_AS_RANGE_OFFICER 
+                            "A range officer is not currently signed in. Do you wish to signin as the range officer?"
+    IDS_TITLE_RO_SIGNIN     "Range Officer SignIn"
+    IDS_TITLE_SHOOTER_SIGNIN "Shooter SignIn"
+    IDS_TITLE_EDIT_RECORD   "Edit SignIn Record"
+    IDS_NOT_FINANCIAL       "This shooter (Number: %1) is not in the list of shooters known to be currently financial with ACTA. Click Yes if you have confirmed they are financial for this year. Click No if you are not sure if they are financial, but are willing to sign them in this time only, and click Cancel to not sign them in."
+    IDS_ERR_SEARCH_TEXT_TOO_SHORT 
+                            "The search text must be at least 3 characters to reduce the number of records returned."
+    IDS_ERR_NO_RECORDS_FOUND "The search returned no records."
+    IDS_ERR_SEARCH_NOTHING_SELECTED 
+                            "Please select an item from the list box and press Ok, or press Cancel."
+    IDS_ERR_LABEL_RESOLUTION 
+                            "The label resolution is too small for printing (%1 mm width,%2 mm height). Required (%3 mm width, %4mm height). Try using a bigger label size."
+    IDS_APP_TITLE           "Shooter Sign In Register"
+    IDS_ERR_LICENSE_EXPIRY  "The license expiry date must be in the future to sign in."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Australia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENA)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_AUS
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SIGNIN DIALOGEX 0, 0, 505, 408
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shooter SignIn"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_MEMBERSHIP_NUMBER,99,19,136,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    PUSHBUTTON      "Lookup...",IDC_BUTTON_SEARCH,245,19,50,14
+    EDITTEXT        IDC_EDIT_SHOOTER_NAME,99,44,136,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LICENSE,99,69,136,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CLUB,99,94,136,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL         "",IDC_LICENSE_EXPIRY,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,272,68,59,15
+    PUSHBUTTON      "Tomorrow",IDC_BUTTON_TOMORROW,335,68,50,14
+    CONTROL         "Category A",IDC_CHECK_A,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,413,66,53,10
+    CONTROL         "Category B",IDC_CHECK_B,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,413,80,52,10
+    CONTROL         "Category C",IDC_CHECK_C,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,413,94,54,10
+    PUSHBUTTON      "Clear Signature",IDC_BUTTON_CLEARSIG,15,336,149,65
+    DEFPUSHBUTTON   "OK",IDOK,178,336,149,65
+    PUSHBUTTON      "Cancel",IDCANCEL,341,336,149,65
+    LTEXT           "Membership Number",IDC_STATIC,25,22,66,8
+    LTEXT           "Shooter Name",IDC_STATIC,45,47,46,8
+    GROUPBOX        "Categories",IDC_STATIC,399,52,89,57
+    GROUPBOX        "Signature",IDC_STATIC,16,118,473,189
+    LTEXT           "License Number",IDC_STATIC,40,72,51,8
+    LTEXT           "Club",IDC_STATIC,76,97,15,8
+    LTEXT           "Expires",IDC_STATIC,244,72,24,8
+    LTEXT           "Days until expiry",IDC_STATIC,244,97,54,8
+    LTEXT           "Static",IDC_TXT_EXPIRYDAYS,303,93,96,21
+END
+
+IDD_LOOKUP DIALOGEX 0, 0, 352, 256
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Membership Number Lookup"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_SEARCH_TEXT,67,47,122,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    PUSHBUTTON      "Search",IDC_BUTTON_SEARCH,196,47,50,14
+    LISTBOX         IDC_LIST_SEARCH_RECORDS,19,102,315,114,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,118,235,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,184,235,50,14
+    LTEXT           "Search Text",IDC_STATIC,21,49,40,8
+    LTEXT           "Enter all or part of the shooter name below (at least 3 characters), then click Search. When you have located the shooter record, select it in the list box and and press OK.",IDC_STATIC,21,14,311,24
+    LTEXT           "Shooter Name                                       Membership Number       Club",IDC_STATIC,20,89,313,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_SIGNIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 498
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 401
+    END
+
+    IDD_LOOKUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 345
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 249
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\SignInRegister.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SignInRegister.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_PEN          CURSOR                  "C:\\WINDOWS\\Cursors\\pen_r.cur"
+#endif    // English (Australia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\SignInRegister.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
